@@ -1,0 +1,26 @@
+[$
+  CODEF ZERK contador = 1234;
+  CODEF ZERK opcion = 1;
+  CODEF FLY flotante = 123.45;
+  CODEF BYTE letra = 'A';
+  CODEF STRINGO saludo = "Hola Mundo";
+  CODEF FLAG activo = VERDADERO;
+  
+  ##
+
+  MOSTRAR(saludo);
+  CAPTURAR("Introduce un numero: ", contador);
+
+  VERIFICAR (contador == 1) ACTUAR { MOSTRAR("El numero es uno"); }
+
+  LOOPR (contador < 10) { MOSTRAR(contador); contador = contador + 1; }
+
+  REPEAT { MOSTRAR(contador); contador = contador + 1; } MIENTRAS (contador < 5);
+
+  ELEGIR(opcion) { CASO 1: { MOSTRAR("opcion 1 seleccionada"); } CASO 2: { MOSTRAR("opcion 2 seleccionada"); } DEFAULT: { MOSTRAR("opcion no valida"); } }
+
+  // Nota sobre el codigo
+  /* Comentario en bloque */
+
+  ##
+$]
